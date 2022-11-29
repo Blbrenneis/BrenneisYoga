@@ -35,24 +35,18 @@
 
 <header> 
 
-<a href="index.html"><img src="images/logo.png" alt="Brenneis Yoga Studio Logo"/></a>
+<a href="index.html"><img src="images/logo.png" alt="Brenneis Yoga Studio Logo" /></a>
 
 </header> 
 
 <div id = "wrapper">
 		 
 	<nav>
-		<style>
-			body {
-				font-family: 'Playfair Display';
-				font-size: 22px;
-			}
-		</style>
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="classes.html">Classes</a></li>
-			<li><a href="Sign Up.html">Sign Up</a></li>
-			<li><a href="Reviews.html">Reviews</a></li>
+			<li><a href="signup.html">Sign Up</a></li>
+			<li><a href="reviews.html">Reviews</a></li>
 		</ul>
 	</nav> 
 	 
@@ -61,61 +55,44 @@
 <h2>Sign Up!</h2>
 
 <form id="signup">
-	<fieldset id="custInfo">
+	<fieldset id="custinfo">
 		<legend>Customer Information</legend>
 
-		<div class="formRow">
-			<label for="name">Name*</label>
-			<input name="custName" id="name" type="text" />
-		</div>
+		<label for="name">Name</label><br />
+		<input type="text" id="name" name="name" /><br />
 
-		<div class="formRow"
-                    <label for="street">Street Address</label>
-                    <input name="custStreet" id="street" type="text" />
-              </div>
+		<label for="address">Street Address</label><br />
+		<input type="text" id="address" name="address" /><br />
 
-		<div class="formRow"
-                    <label for="city">City</label>
-                    <input name="custCity" id="city" type="text" />
-              </div>
+		<label for="city">City</label><br />
+		<input type="text" id="city" name="city" /><br />
 
-		<div class="formRow"
-                    <label for="state">State</label>
-                    <input name="custState" id="state" type="text" />
-              </div>
+		<label for="state">State</label><br />
+		<input type="text" id="state" name="state" /><br />
 
-		<div class="formRow"
-                    <label for="zip">Postal Code</label>
-                    <input name="custZip" id="zip" type="text" />
-              </div>
+		<label for="postalcode">Postal Code</label><br />
+		<input type="text" id="postalcode" name="postalcode" /><br />
 
-		<div class="formRow"
-                    <label for="phone">Phone Number</label>
-                    <input name="custPhone" id="phone" type="tel" />
-              </div>
+		<label for="phone">Phone Number</label><br />
+		<input type="text" id="phone" name="phone" /><br />
 
-		<div class="formRow"
-              <label for="mail">Email*</label>
-              <input name="custEmail" id="mail" type="email" />
-              </div>
+		<label for="email">Email</label><br />
+		<input type="text" id="email" name="email" /><br />
 
 	</fieldset>
 
 	<fieldset id="classinfo">
 		<legend>Which class would you like to take?</legend>
 
-		<div class="formRow">
-			<label for="classtype">Class Type</label>
+			<label for="classtype">Class Type:</label><br />
 			<select name="classtype" id="classtype">
 				<option value="Beginner">Beginner</option>
 				<option value="Intermediate">Intermediate</option>
 				<option value="Advanced">Advanced</option>
 				<option value="Meditation">Meditation</option>
 			</select>
-		</div>
-
-		<div class="formRow">
-			<label for="classtime">Class Time</label>
+	<br />
+			<label for="classtime">Class Time:</label><br />
 			<select name="classtime" id="classtime">
 				<option value="6:00am">6:00 AM</option>
 				<option value="7:00am">7:00 AM</option>
@@ -130,37 +107,33 @@
 				<option value="4:00pm">4:00 PM</option>
 				<option value="5:00pm">5:00 PM</option>
 			</select>
-		</div>
 
 	</fieldset>
 
-	
+
 	<p>
 		All participants are required to sign a health waiver prior to their first class.
 		You may accept the waiver requirements below OR you may sign a hard copy
 		at the studio. Thank you in advance!
 	</p>
-	
+
 
 	<fieldset id="consent">
 		<legend>Consent Form</legend>
-		<div class="formRow">
-			<input type="checkbox" id="consent" name="consent" />
+
 			<label for="consent">
+			<input type="checkbox" id="consent" name="consent" />
 				I hereby consent to receive medical treatment that may be deemed
 				advisable in the event of injury, accident, and/or illness during this event and acknowledge
 				understanding that I am responsible for any charges or financial obligations arising from such
 				treatment.
 			</label>
-		</div>
-
 	</fieldset>
-
+<br />
 	<fieldset>
-		<div class="buttons" id="buttons">
+
 			<input type="submit" value="Submit My Info" />
 			<input type="reset" value="Cancel" />
-		</div>
 
 	</fieldset>
 </form>

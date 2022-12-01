@@ -24,7 +24,6 @@ body {
     border-radius: 25px;
 }
 
-
 header {
     width: 910px; /* reduced by 20px to accommodate shadow */
     margin-bottom: 30px;
@@ -41,8 +40,10 @@ nav {
     float: left;
     text-align: center;
     font-family: 'Playfair Display', serif;
+    font-size: 22px;
 
 }
+
 
 nav ul {
     font-weight: bold;
@@ -91,6 +92,7 @@ figure {
 figcaption {
     font-style: italic;
     padding: 5px;
+    text-align: center;
 }
 
 aside {
@@ -118,7 +120,15 @@ h3 {
     padding-top: 0.5em;
 }
 
+h5 {
+    font-style: italic;
+    text-align: center;
+    
+}
 
+h6 {
+    text-align: center;
+}
 
 footer {
     width: 910px;
@@ -156,6 +166,10 @@ footer a:hover {
     text-decoration: underline;
 }
 
+iframe {
+    width: 100%;
+}
+
 /* table */
 
 table {
@@ -181,9 +195,18 @@ td {
     padding: 15px;
 }
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td:hover {
+    background-color: lightgrey;
+}
+
 /* form */
 
-div.buttons {
+buttons {
     text-align: center;
     width: 100%;
 }
@@ -191,4 +214,5 @@ div.buttons {
 fieldset {
     background-color: rgb(242, 242, 242);
 }
+
 
